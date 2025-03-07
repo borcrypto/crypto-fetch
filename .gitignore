@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+
+# Credentials and config files
+credentials.json
+config.json
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS and Linux system files
+.DS_Store
+*.swp
+
+# Logs and temporary files
+*.log
+*.tmp
