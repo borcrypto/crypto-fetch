@@ -1,4 +1,4 @@
-# BTC Price  Data Fetcher
+# Crypto Price Data Fetch
 
 This script retrieves historical BTC prices from Binance for the last specified number of weeks, formatted weekly, and saves the data directly to a Google Spreadsheet.
 
@@ -6,7 +6,6 @@ This script retrieves historical BTC prices from Binance for the last specified 
 - Fetches weekly BTC/USDT closing prices for the past specified weeks.
 - Formats the data with Year, Month, Week, and Price.
 - Uploads the data automatically to Google Sheets.
-- Displays progress in the terminal with colorized output.
 
 ## Prerequisites
 - Python 3.10 or higher
@@ -17,8 +16,8 @@ This script retrieves historical BTC prices from Binance for the last specified 
 
 ### 1. Clone the repository
 ```sh
-git clone https://github.com/borcrypto/crypto-price-fetch.git
-cd crypto-price-fetch
+git clone https://github.com/borcrypto/crypto-fetch.git
+cd crypto-fetch
 ```
 
 ### 2. Create a Virtual Environment
@@ -37,11 +36,11 @@ pip install -r requirements.txt
 Place your `credentials.json` file in the project root.
 
 ### 5. Configure `config.json`
-Create a `config.json` file in the project root with the following structure:
+Rename a `config.json.example` to `config.json` file in the project root with the following structure:
 ```json
 {
-  "weeks": 4, //replace 
-  "sheet_id": "1GaV0-6M1xQLBse8VjkG4B9Hjf-q6IMvRuhvTC2fDoO4",
+  "weeks": 4,
+  "sheet_id": "#REPLACE-WITH-YOUR-GOOGLESHEETID",
   "symbol": "BTCUSDT"
 }
 ```
